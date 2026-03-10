@@ -1,18 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luné - Legal</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; padding: 32px 20px; line-height: 1.7; color: #333; max-width: 680px; margin: auto; }
-        h1 { font-size: 24px; color: #1a1a1a; }
-        a { color: #009EFD; font-size: 15px; display: block; margin-top: 12px; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luné — Legal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #E8F4FD 0%, #F0F4FF 40%, #F8F0FF 70%, #FFF0F5 100%);
+      padding: 40px 20px;
+    }
+    .card {
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255,255,255,0.8);
+      border-radius: 32px;
+      padding: 48px 40px;
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 8px 40px rgba(180,160,220,0.15);
+    }
+    .logo {
+      font-family: 'Pacifico', cursive;
+      font-size: 52px;
+      background: linear-gradient(90deg, #2AF598, #009EFD);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 6px;
+    }
+    .tagline {
+      font-size: 11px;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: #999;
+      font-weight: 500;
+      margin-bottom: 36px;
+    }
+    .divider {
+      width: 40px;
+      height: 2px;
+      background: linear-gradient(90deg, #2AF598, #009EFD);
+      border-radius: 2px;
+      margin: 0 auto 32px;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .link-btn {
+      display: block;
+      padding: 16px 24px;
+      border-radius: 18px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      transition: transform 0.15s, box-shadow 0.15s;
+      letter-spacing: 0.02em;
+    }
+    .link-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(0,158,253,0.2);
+    }
+    .link-primary {
+      background: linear-gradient(135deg, #2AF598, #009EFD);
+      color: white;
+    }
+    .link-secondary {
+      background: rgba(255,255,255,0.8);
+      color: #555;
+      border: 1px solid rgba(0,158,253,0.2);
+    }
+    .footer {
+      margin-top: 32px;
+      font-size: 11px;
+      color: #bbb;
+    }
+  </style>
 </head>
 <body>
-    <h1>Luné — Legal</h1>
-    <a href="privacy-policy.html">Privacy Policy</a>
-    <a href="terms-of-use.html">Terms of Use</a>
+  <div class="card">
+    <div class="logo">Luné</div>
+    <p class="tagline">Mindful Glow-Up</p>
+    <div class="divider"></div>
+    <div class="links">
+      <a href="privacy-policy.html" class="link-btn link-primary">Privacy Policy</a>
+      <a href="terms-of-use.html" class="link-btn link-secondary">Terms of Use</a>
+    </div>
+    <p class="footer">© 2026 Akin Daskapan</p>
+  </div>
 </body>
 </html>
